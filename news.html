@@ -16,7 +16,7 @@ body
 {
  display:flex;
  flex-direction:column;
- justify-content:flex-end;
+ align-content:flex-end;
  font-family: 'Open Sans', sans-serif;
 }
 .top
@@ -24,6 +24,7 @@ body
  display:flex;
  justify-content:center;
  padding:5px;
+ height:20px;
 }
 .top img 
 {
@@ -121,7 +122,8 @@ body
  justify-content: space-around;
  position: fixed;
  width: 100%;
- top:91vh;
+ top:90%;
+ height:36px;
  z-index: 1;
  background: white;
  padding-top: 13px;
@@ -130,6 +132,7 @@ body
 .bot_menu div
 {
  opacity:.3;
+ height:7vh;
 }
 .bot_menu div:hover
 {
@@ -143,7 +146,7 @@ body
 <div class = "top">
  <img src = "logo.png" />
 </div>
-<div style="height:81vh; overflow:scroll;">
+<div style="overflow:scroll;">
  <div class = "post">
   <div class = "header">
    <div class = "theme">Електричний струм</div>
