@@ -14,6 +14,16 @@ body
  justify-content:flex-end;
  font-family: 'Open Sans Condensed', sans-serif;
 }
+.top
+{
+ display:flex;
+ justify-content:center;
+ padding:5px;
+}
+.top img 
+{
+ height:27px;
+}
 .news
 {
  display:flex;
@@ -24,7 +34,7 @@ body
 {
  display:flex;
  flex-direction:column;
- margin:1px;
+ margin-top:15px;
  background:white;
  border:1px solid grey;
  border-radius:2px;
@@ -103,10 +113,23 @@ body
  position:fixed;
  width:100%;
 }
+.bot_menu div
+{
+ opacity:.3;
+}
+.bot_menu div:hover
+{
+ transition:all 0.2s;
+ border-radius:5px;
+ opacity:1;
+}
 </style>
 </head>
 <body>
-<div style="height:97vh;">
+<div class = "top">
+ <img src = "logo.png" />
+</div>
+<div style="height:90vh;">
  <div class = "post">
   <div class = "header">
    <div class = "predmet">
@@ -183,6 +206,9 @@ body
   </div>
  </div>
 </div>
+
+
+
 <div class = "bot_menu">
  <div>
 	<img src="https://png.icons8.com/metro/20/000000/menu.png">
