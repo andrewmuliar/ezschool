@@ -5,14 +5,13 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:300" rel="stylesheet">
-<style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><style>
 body
 {
  display:flex;
  flex-direction:column;
  justify-content:flex-end;
- font-family: 'Open Sans Condensed', sans-serif;
+ font-family: 'Open Sans', sans-serif;
 }
 .top
 {
@@ -36,7 +35,7 @@ body
  flex-direction:column;
  margin-top:15px;
  background:white;
- border:1px solid grey;
+ border:1px solid #dddfe2;
  border-radius:2px;
 }
 .header
@@ -47,28 +46,29 @@ body
 }
 .theme
 {
- font-size:18px;
+ font-size:14px;
+ border-bottom:1px solid #dddfe2;
+ padding-left:15px;
+ padding-bottom:10px;
+ padding-top:3px;
 }
 .predmet
 {
- font-size:20px;
- font-weight:bold;
- padding-left:15px;
+ font-size:14px;
 }
 .info
 {
- display:flex;
+/* display:flex;*/
+ display:none;
  flex-direction:column;
  align-items:flex-end;
 }
 .author
 {
- font-family: 'Roboto', sans-serif;
  font-size:14px;
 }
 .date
 {
- font-family: 'Roboto', sans-serif;
  font-size:12px;
 }
 .content
@@ -77,14 +77,13 @@ body
 }
 .text
 {
- padding:20px;
+ padding:18px;
  font-size:20px;
- font-family: 'Roboto', sans-serif;
 }
 .docs
 {
  display:flex;
- justify-content:flex-start;
+ justify-content:space-around;
  flex-wrap:wrap;
  padding-left:5px;
 }
@@ -92,7 +91,6 @@ body
 {
  display:flex;
  flex-direction:column;
- font-family: 'Roboto', sans-serif;
  align-items:center;
  margin:5px;
  font-size:12px;
@@ -100,11 +98,13 @@ body
 .doc-item img 
 {
  width:33px;
+ margin-bottom:10px;
 }
 .post:hover
 {
  transition:box-shadow 0.5s;
  box-shadow:1px 1px 15px grey;
+ cursor:pointer;
 }
 .bot_menu
 {
@@ -132,10 +132,10 @@ body
 <div style="height:90vh;">
  <div class = "post">
   <div class = "header">
+   <div class = "theme">Електричний струм</div>
    <div class = "predmet">
     Фізика
    </div>
-   <div class = "theme">Електричний струм</div>
    <div class = "info">
     <div class = "author">
      Olexandra Pavlivna
@@ -170,10 +170,10 @@ body
 
  <div class = "post">
   <div class = "header">
+   <div class = "theme">Додавання дробів</div>
    <div class = "predmet">
-    Фізика
+    Математика
    </div>
-   <div class = "theme">Електричний струм</div>
    <div class = "info">
     <div class = "author">
      Olexandra Pavlivna
@@ -184,7 +184,7 @@ body
    </div>
   </div>
   <div class = "content">
-   <div class = "text">Вправа номер 26</div>
+   <div class = "text">Розв'язати приклади</div>
    <div class = "docs">
     <div class = "doc-item">
 	 <img src="https://png.icons8.com/color/50/000000/word.png">
@@ -194,17 +194,14 @@ body
 	 <img src="https://png.icons8.com/color/50/000000/ms-excel.png">	
 	 <div>Use This</div>
 	</div>
-    <div class = "doc-item">
-	 <img src="https://png.icons8.com/color/50/000000/ms-powerpoint.png">	
-	 <div>Look here</div>
-	</div>
+
     <div class = "doc-item">
 	 <img src="https://png.icons8.com/ios/50/000000/exe.png">
 	 <div>Run this</div>
 	</div>
-   </div>
   </div>
  </div>
+</div>
 </div>
 
 
