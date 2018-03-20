@@ -6,6 +6,12 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><style>
+*
+{
+ padding:0;
+ top:0;
+ left:0;
+}
 body
 {
  display:flex;
@@ -77,8 +83,10 @@ body
 }
 .text
 {
- padding:18px;
+ padding:14px;
  font-size:20px;
+ overflow:scroll;
+ max-height:150px;
 }
 .docs
 {
@@ -108,10 +116,15 @@ body
 }
 .bot_menu
 {
- display:flex;
- justify-content:space-around;
- position:fixed;
- width:100%;
+ display: flex;
+ justify-content: space-around;
+ position: fixed;
+ width: 100%;
+ top:91vh;
+ z-index: 1;
+ background: white;
+ padding-top: 13px;
+ box-shadow: 0px -1px 0px #dddfe2;
 }
 .bot_menu div
 {
@@ -129,7 +142,7 @@ body
 <div class = "top">
  <img src = "logo.png" />
 </div>
-<div style="height:90vh;">
+<div style="height:81vh; overflow:scroll;">
  <div class = "post">
   <div class = "header">
    <div class = "theme">Електричний струм</div>
@@ -170,6 +183,41 @@ body
 
  <div class = "post">
   <div class = "header">
+   <div class = "theme">Електричний струм</div>
+   <div class = "predmet">
+    Фізика
+   </div>
+   <div class = "info">
+    <div class = "author">
+     Olexandra Pavlivna
+    </div>
+    <div class = "date">
+     20:13:10 10.10
+    </div>
+   </div>
+  </div>
+  <div class = "content">
+   <div class = "text">Вправа номер 26</div>
+   <div class = "docs">
+    <div class = "doc-item">
+	 <img src="https://png.icons8.com/color/50/000000/word.png">
+	 <div>HomeWork</div>
+	</div>
+    <div class = "doc-item">
+	 <img src="https://png.icons8.com/color/50/000000/ms-excel.png">	
+	 <div>Use This</div>
+	</div>
+    <div class = "doc-item">
+	 <img src="https://png.icons8.com/color/50/000000/ms-powerpoint.png">	
+	 <div>Look here</div>
+	</div>
+  </div>
+ </div>
+</div>
+
+
+ <div class = "post">
+  <div class = "header">
    <div class = "theme">Додавання дробів</div>
    <div class = "predmet">
     Математика
@@ -184,7 +232,7 @@ body
    </div>
   </div>
   <div class = "content">
-   <div class = "text">Розв'язати приклади</div>
+   <div class = "text">Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту Багато тексту</div>
    <div class = "docs">
     <div class = "doc-item">
 	 <img src="https://png.icons8.com/color/50/000000/word.png">
