@@ -9,6 +9,12 @@
 <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <style>
+*
+{
+ top:0;
+ left:0;
+ margin:0;
+}
 body
 {
  font-family: 'Open Sans', sans-serif;
@@ -16,7 +22,10 @@ body
 .menu
 {
  display:flex;
+ width:75%;
+ height:100vh;
  flex-direction: column;
+ box-shadow:5px 1px 6px 0 hsla(0,0%,0%,0.2);
 }
 .menu ul
 {
@@ -25,77 +34,106 @@ body
 .menu ul li
 {
  display:flex;
+ font-size:14px;
  padding:5px;
+ color:hsla(0,0%,0%,0.8);
 }
 .menu ul li:hover
 {
  background:whitesmoke;
+ color:hsla(0,0%,0%,1);
+}
+.menu ul li img
+{
+ opacity:0.5;
+ width:20px;
 }
 .menu ul li div
 {
  padding:5px;
 }
+.active
+{
+ opacity:1;
+}
+.active-text
+{
+ color:hsla(0,0%,0%,1);
+ background:whitesmoke;
+}
 </style>
 <body>
 <div class = "menu">
- <div style="align-self: center;">
- <img src="Logo.jpg" style="width:145px;"/>
+ <div style="align-self: center; padding-top:8px;">
+  <img src="Logo.jpg" style="height:50px;"/>
  </div>
+ <div style="display:flex; flex-direction:column; justify-content:space-evenly; height:100vh;">
  <ul>
   <li>
    <div>
-	<img src="https://png.icons8.com/ios/50/000000/appointment-reminders.png" style="width:40px;">   	
+	<img src="zondicons/notifications-outline.svg">   	
    </div>
    <div>Новини</div>
-  </li>  
+  </li> 
   <li>
    <div>
-   	<img src="https://png.icons8.com/dotty/50/000000/magazine.png" style="width:40px;">   	
+   	<img src="https://png.icons8.com/dotty/50/000000/magazine.png">   	
    </div>
    <div>Розклад</div>
   </li>  
+ </ul>
+
+ <ul>
   <li>
    <div>
-	<img src="https://png.icons8.com/ios/50/000000/true-false.png" style="width:40px;">
+	<img src="zondicons/trophy.svg">
    </div>
    <div>Успішність</div>
   </li>  
   <li>
    <div>
-	<img src="https://png.icons8.com/ios/50/000000/attendance-mark.png" style="width:40px;">
+	<img src="zondicons/hour-glass.svg">
    </div>
    <div>Відвідуваність</div>
   </li>  
-  <li>
-   <div style="width:100%;"><hr style="width:100%;"/></div>
-  </li>
+ </ul>
+ 
+ <ul>
   <li>
    <div>
-   	<img src="https://png.icons8.com/wired/50/000000/classroom.png" style="width:40px;">
+   	<img src="https://png.icons8.com/wired/50/000000/classroom.png">
    </div>
    <div>Вчителі</div>
   </li>   
   <li>
    <div>
-	<img src="https://png.icons8.com/ios/50/000000/find-user-male.png" style="width:40px;">
+	<img src="zondicons/search.svg">
    </div>
    <div>Знайти вчителя</div>
-  <li>
-   <div style="width:100%;"><hr style="width:100%;"/></div>
-  </li>   
+ </ul>
+ <ul>
   <li>
    <div>
-	<img src="https://png.icons8.com/dotty/50/000000/overtime.png" style="width:40px;">
+	<img src="zondicons/calendar.svg">
    </div>
    <div>Події</div>
   </li>    
   <li>
    <div>
-	<img src="https://png.icons8.com/wired/50/000000/elections.png" style="width:40px;">
+	<img src="zondicons/chart-pie.svg">
    </div>
    <div>Голосування</div>
   </li>  
  </ul>
+ <ul>
+  <li class = "active-text">
+   <div>
+    <img style="opacity:1;" src="zondicons/tuning.svg">
+   </div>
+   <div>Налаштування</div>
+  </li>
+ </ul>
+</div>
 </div>
 </body>
 </html>

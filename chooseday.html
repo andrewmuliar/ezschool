@@ -5,21 +5,21 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Choose day</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Roboto:300" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><style>
 <style>
 body
 {
- display:flex;
- flex-direction:column;
- justify-content:flex-end;
- font-family: 'Roboto', sans-serif;
- font-size:18px;
+ font-family: 'Open Sans', sans-serif;
 }
 .top
 {
  display:flex;
  justify-content:center;
- padding:5px;
+ padding-top:8px;
+ height:30px;
+ background:white;
+ width:100%;
+ position:fixed;
 }
 .top img 
 {
@@ -29,11 +29,16 @@ body
 {
  display:flex;
  justify-content:space-around;
+ font-family: 'Open Sans', sans-serif;
  padding:15px;
 }
 .day div:first-child
 {
  width:100%;
+}
+.day:hover
+{
+ background:#f3f3f4;
 }
 .bot_menu
 {
@@ -41,7 +46,8 @@ body
  justify-content: space-around;
  position: fixed;
  width: 100%;
- top:91vh;
+ top:93%;
+ height:36px;
  z-index: 1;
  background: white;
  padding-top: 13px;
@@ -50,12 +56,17 @@ body
 .bot_menu div
 {
  opacity:.3;
+ height:7vh;
 }
 .bot_menu div:hover
 {
  transition:all 0.2s;
  border-radius:5px;
  opacity:1;
+}
+.bot_menu img
+{
+ width:18px;
 }
 </style>
 </head>
@@ -66,43 +77,43 @@ body
 <div style="height:97vh;">
  <div class = "day">
   <div>Весь тиджень</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>Понеділок</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>Вівторок</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>Середа</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>Четвер</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>П'ятниця</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
  <div class = "day">
   <div>Всі домашні роботи</div>
-  <div><img src="https://png.icons8.com/metro/20/000000/forward.png"></div>
+  <div><img src="zondicons/arrow-thin-right.svg" style="width:15px;"></div>
  </div>
 </div>
 
 <div class = "bot_menu">
  <div>
-	<img src="https://png.icons8.com/metro/20/000000/menu.png">
+	<img src="zondicons/menu.svg">
  </div>
  <div>
 	<a href = "chooseday.html"><img src="https://png.icons8.com/ios/20/000000/timetable.png"></a>
  </div>
  <div>
-	<a href = "news.html"><img src="https://png.icons8.com/ios/20/000000/appointment-reminders.png"></a>
+	<a href = "news.html"><img src="zondicons/home.svg"></a>
  </div>
  <div>
 	<img src="https://png.icons8.com/wired/20/000000/test-passed.png">
