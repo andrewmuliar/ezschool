@@ -5,7 +5,12 @@
     <meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>News</title>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><style>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<style>
 *
 {
  padding:0;
@@ -276,5 +281,15 @@ body
 	<img src="https://png.icons8.com/wired/20/000000/classroom.png"> 
  </div>
 </div>
+<script>
+$(document).ready(function()
+{
+ $(".post").hide()
+ $(".post").first().slideDown("300", function showNext()
+ {
+  $(this).next().slideDown("300", showNext)
+ })
+})
+</script>
 </body>
 </html>

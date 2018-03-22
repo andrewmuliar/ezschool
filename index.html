@@ -4,9 +4,13 @@
 	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
 	<title>Let's get it!</title>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script>
-<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
 </head>
 <style>
 *
@@ -23,7 +27,11 @@ body
 {
  display:flex;
  width:75%;
+ margin-left:-77%;
  height:100vh;
+ z-index:2;
+ position:absolute;
+ background:white;
  flex-direction: column;
  box-shadow:5px 1px 6px 0 hsla(0,0%,0%,0.2);
 }
@@ -36,14 +44,15 @@ body
  display:flex;
  font-size:14px;
  padding:5px;
- color:hsla(0,0%,0%,0.8);
+ text-transform:uppercase;
+ color:hsla(0,0%,0%,0.5);
 }
 .menu ul li:hover
 {
  background:whitesmoke;
  color:hsla(0,0%,0%,1);
 }
-.menu ul li img
+.menu ul li i
 {
  opacity:0.5;
  width:20px;
@@ -67,17 +76,17 @@ body
  <div style="align-self: center; padding-top:8px;">
   <img src="Logo.jpg" style="height:50px;"/>
  </div>
- <div style="display:flex; flex-direction:column; justify-content:space-evenly; height:100vh;">
+ <div id="container" style="display:flex; flex-direction:column; justify-content:space-evenly; height:100vh;">
  <ul>
   <li>
    <div>
-	<img src="zondicons/notifications-outline.svg">   	
+	<i class="fa fa-newspaper" style="font-size:1.6em; color:grey;"></i>
    </div>
    <div>Новини</div>
   </li> 
   <li>
-   <div>
-   	<img src="https://png.icons8.com/dotty/50/000000/magazine.png">   	
+   <div >
+   <i class="fa fa-calendar-alt" style="font-size:1.6em; color:grey;"></i>
    </div>
    <div>Розклад</div>
   </li>  
@@ -86,13 +95,13 @@ body
  <ul>
   <li>
    <div>
-	<img src="zondicons/trophy.svg">
+	<i class="fa fa-chart-line" style="font-size:1.6em;"></i>
    </div>
    <div>Успішність</div>
   </li>  
   <li>
    <div>
-	<img src="zondicons/hour-glass.svg">
+	<i class="fa fa-calendar-check" style="font-size:1.6em;"></i>
    </div>
    <div>Відвідуваність</div>
   </li>  
@@ -101,26 +110,26 @@ body
  <ul>
   <li>
    <div>
-   	<img src="https://png.icons8.com/wired/50/000000/classroom.png">
+   	<img src="https://png.icons8.com/wired/50/000000/classroom.png" style="width:25px;">
    </div>
    <div>Вчителі</div>
   </li>   
   <li>
    <div>
-	<img src="zondicons/search.svg">
+	<i class="fa fa-search" style="font-size:1.6em;"></i>
    </div>
    <div>Знайти вчителя</div>
  </ul>
  <ul>
   <li>
    <div>
-	<img src="zondicons/calendar.svg">
+	<i class="far fa-calendar-plus" style="font-size:1.6em;"></i>
    </div>
    <div>Події</div>
   </li>    
   <li>
    <div>
-	<img src="zondicons/chart-pie.svg">
+	<i class="fa fa-hand-paper" style="font-style:1.6em;"></i>
    </div>
    <div>Голосування</div>
   </li>  
@@ -128,12 +137,21 @@ body
  <ul>
   <li class = "active-text">
    <div>
-    <img style="opacity:1;" src="zondicons/tuning.svg">
+    <i class="fa fa-sliders-h" style="font-style:1.6em;"></i>
    </div>
    <div>Налаштування</div>
   </li>
  </ul>
 </div>
 </div>
+<script>
+$(document).ready(function()
+{
+ //$(".menu").hide()
+  $(".menu").animate({"margin-left": '0%'}, 500);
+ //$("#container").hide()
+ //$("#container").slideDown("300")
+})
+</script>
 </body>
 </html>
