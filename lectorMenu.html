@@ -1,0 +1,154 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">	
+	<title>Let's get it!</title>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/solid.js" integrity="sha384-+Ga2s7YBbhOD6nie0DzrZpJes+b2K1xkpKxTFFcx59QmVPaSA8c7pycsNaFwUK6l" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/regular.js" integrity="sha384-t7yHmUlwFrLxHXNLstawVRBMeSLcXTbQ5hsd0ifzwGtN7ZF7RZ8ppM7Ldinuoiif" crossorigin="anonymous"></script>
+	<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/fontawesome.js" integrity="sha384-7ox8Q2yzO/uWircfojVuCQOZl+ZZBg2D2J5nkpLqzH1HY0C1dHlTKIbpRz/LG23c" crossorigin="anonymous"></script><link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+	<script
+	  src="https://code.jquery.com/jquery-3.3.1.min.js"
+	  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	  crossorigin="anonymous"></script>
+</head>
+<style>
+*
+{
+ top:0;
+ left:0;
+ margin:0;
+}
+body
+{
+ font-family: 'Open Sans', sans-serif;
+}
+.menu
+{
+ display:flex;
+ width:75%;
+ margin-left:-77%;
+ height:100vh;
+ z-index:2;
+ position:absolute;
+ background:white;
+ flex-direction: column;
+ box-shadow:5px 1px 6px 0 hsla(0,0%,0%,0.2);
+}
+.menu ul
+{
+ list-style: none;
+}
+.menu ul li
+{
+ display:flex;
+ font-size:14px;
+ padding:5px;
+ text-transform:uppercase;
+ color:hsla(0,0%,0%,0.5);
+}
+.menu ul li:hover
+{
+ background:whitesmoke;
+ color:hsla(0,0%,0%,1);
+}
+.menu ul li i
+{
+ opacity:0.5;
+ width:20px;
+}
+.menu ul li div
+{
+ padding:5px;
+}
+.active
+{
+ opacity:1;
+}
+.active-text
+{
+ color:hsla(0,0%,0%,1);
+ background:whitesmoke;
+}
+</style>
+<body>
+<div class = "menu">
+ <div style="align-self: center; padding-top:8px;">
+  <img src="Logo.jpg" style="height:50px;"/>
+ </div>
+ <div id="container" style="display:flex; flex-direction:column; justify-content:space-evenly; height:100vh;">
+ <ul style="border-left:2px solid #96969a;">
+  <li>
+   <div>
+	<i class="far fa-bell" style="font-size:1.6em; color:grey;"></i>
+   </div>
+   <div>Новини</div>
+  </li> 
+  <li>
+   <div >
+   <i class="fa fa-calendar-alt" style="font-size:1.6em; color:grey;"></i>
+   </div>
+   <div>Розклад</div>
+  </li>  
+ </ul>
+
+ <ul style="border-left:2px solid #2ff52f;">
+  <li>
+   <div>
+	<i class="fa fa-chart-line" style="font-size:1.6em;"></i>
+   </div>
+   <div>Успішність</div>
+  </li>  
+  <li>
+   <div>
+	<i class="fa fa-calendar-check" style="font-size:1.6em;"></i>
+   </div>
+   <div>Відвідуваність</div>
+  </li>  
+ </ul>
+
+ <ul style="border-left:2px solid #efcbcb;">
+  <li>
+   <div>
+   	<i class="fa fas fa-child" style="font-size:1.6em;"></i>
+   </div>
+   <div>Учні</div>
+  </li>   
+  <li>
+   <div>
+	<i class="fa fa-search" style="font-size:1.6em;"></i>
+   </div>
+   <div>Знайти учня</div>
+ </ul>
+ <ul style="border-left:2px solid #45D7DF;">
+  <li>
+   <div>
+	<i class="far fa-calendar-plus" style="font-size:1.6em;"></i>
+   </div>
+   <div>Події</div>
+  </li>    
+  <li>
+   <div>
+	<i class="fa fa-hand-paper" style="font-style:1.6em;"></i>
+   </div>
+   <div>Голосування</div>
+  </li>  
+ </ul>
+ <ul style="border-left:2px solid #AF53A9;">
+  <li class = "active-text">
+   <div>
+    <i class="fa fa-sliders-h" style="font-style:1.6em;"></i>
+   </div>
+   <div>Налаштування</div>
+  </li>
+ </ul>
+</div>
+</div>
+<script>
+$(document).ready(function()
+{
+ $(".menu").animate({"margin-left": '0%'}, 500);
+})
+</script>
+</body>
+</html>
