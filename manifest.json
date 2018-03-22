@@ -1,0 +1,24 @@
+{
+  "short_name": "eSchool",
+  "name": "eSchool",
+  "icons": [
+    {
+      "src": "icons/icon-96.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/full.html",
+  "display": "fullscreen",
+  "orientation": "portrait"
+}

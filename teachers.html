@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Carcas</title>
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet"><style>
+</head>
+<body>
+<style>
+/*start carcas*/
+*
+{
+ padding:0;
+ top:0;
+ left:0;
+ margin:0;
+}
+body
+{
+ font-family: 'Open Sans', sans-serif;
+}
+.top
+{
+ display:flex;
+ justify-content:center;
+ padding:5px;
+ height:30px;
+ background:white;
+ width:100%;
+ position:fixed;
+}
+.top img 
+{
+ height:27px;
+}
+.bot_menu
+{
+ display: flex;
+ justify-content: space-around;
+ position: fixed;
+ width: 100%;
+ top:93%;
+ height:36px;
+ z-index: 1;
+ background: white;
+ padding-top: 13px;
+ box-shadow: 0px -1px 0px #dddfe2;
+}
+.bot_menu div
+{
+ opacity:.3;
+ height:7vh;
+}
+.bot_menu div:hover
+{
+ transition:all 0.2s;
+ border-radius:5px;
+ opacity:1;
+}
+/* end carcas*/
+
+.title
+{
+ display:flex;
+ padding-left:5px;
+ background:#dddfe2;
+ color:black;
+}
+</style>
+</head>
+<body>
+<div class = "top">
+ <img src = "logo.png" />
+</div>
+<div style="overflow:scroll; height:87vh; ">
+ <div class = "title">
+   Вчителі
+ </div>
+</div>
+<div class = "search"></div>
+
+
+
+
+
+
+
+
+
+<div class = "bot_menu">
+ <div>
+	<img src="https://png.icons8.com/metro/20/000000/menu.png">
+ </div>
+ <!--<div>
+	<a href = "chooseday.html"><img src="https://png.icons8.com/ios/20/000000/timetable.png"></a>
+ </div> -->
+ <div style="opacity:1;">
+	<a href = "news.html"><img src="zondicons/home.svg" style="width:18px;"></a>
+ </div>
+ <!--<div>
+	<img src="https://png.icons8.com/wired/20/000000/test-passed.png">
+ </div> -->
+ <div>
+	<img src="https://png.icons8.com/wired/20/000000/classroom.png"> 
+ </div>
+</div>
+</body>
+
+</html>
