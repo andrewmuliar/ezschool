@@ -158,6 +158,7 @@ body
  color:hsl(0, 0%, 13%);
  background:hsl(34, 78%, 91%);
  border-left:3px solid hsl(34, 70%, 60%);
+ opacity:0;
  /*VICE CITY*/
 /*background: #3494E6;  /* fallback for old browsers */
 /*background: -webkit-linear-gradient(to right, #EC6EAD, #3494E6);  /* Chrome 10-25, Safari 5.1-6 */
@@ -304,11 +305,13 @@ body
 <script>
 $(document).ready(function()
 {
- $(".post").hide()
- $(".post").first().slideDown("300", function showNext()
+ $(".nowtime").animate({opacity:1}, 500)
+ $(".nowtime").animate({opacity:0.3}, 500)
+ $(".nowtime").animate({opacity:1}, 500)
+ /*$(".post").first().slideDown("500", function showNext()
  {
-  $(this).next().slideDown("300", showNext)
- })
+  $(this).next().slideDown("500", showNext)
+ })*/
 })
 </script>
 </body>
